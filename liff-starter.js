@@ -3,9 +3,9 @@ window.onload = function (e) {
 		var urlParams = new URLSearchParams(window.location.search);
 		liff.sendMessages([
 			{
-				type:'flex',
-				altText:'flex message',
-				contents: JSON.parse(urlParams.get('flex'))
+				type:'template',
+				altText:'template message',
+				contents: JSON.parse(urlParams.get('template'))
 			}
 		]);
     liff.closeWindow();
