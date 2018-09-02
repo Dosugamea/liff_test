@@ -5,7 +5,7 @@ window.onload = function (e) {
 			{
 				type:'flex',
 				altText:'flex message',
-				contents: urlParams.get('flex')
+				contents: JSON.parse(urlParams.get('flex'))
 			}
 		]);
     liff.closeWindow();
