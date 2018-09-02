@@ -5,7 +5,7 @@ window.onload = function (e) {
 			{
 				type:'template',
 				altText:'template message',
-				contents: JSON.parse(urlParams.get('template'))
+				template: JSON.parse(urlParams.get('template'))
 			}
 		]);
     liff.closeWindow();
